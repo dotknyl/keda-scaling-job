@@ -21,6 +21,6 @@ while (true)
     await db.StreamAddAsync(streamName, new NameValueEntry[] { new("id", i) });
     i++;
     Console.WriteLine($"Stream Add: {i}");
-    await Task.Delay(random.Next(1000, 5000));
+    await Task.Delay(random.Next(500, 3000));
     if (i == totalRecords) break;
 }
